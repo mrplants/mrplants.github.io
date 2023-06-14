@@ -82,6 +82,9 @@ function switchTab(tabId) {
 
   // Add the 'active' class to the selected tab.
   document.getElementById(tabId).classList.add('active');
+
+  // Update the URL's hash to reflect the current tab.
+  window.location.hash = tabId;
 }
 
 function toggleDescription(index) {
@@ -98,4 +101,12 @@ function toggleDescription(index) {
 }
 
 // Call the fillInData function when the window is loaded.
-window.onload = fillInData;
+// Call the fillInData function when the window is loaded.
+window.onload = function() {
+  fillInData();
+
+  // If there is a hash in the URL, switch to that tab.
+  if (window.location.hash) {
+    switchTab(window.location.hash.slice(1)); // Remove the '#' from the hash before passing it to switchTab.
+  }
+};

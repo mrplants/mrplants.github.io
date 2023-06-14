@@ -107,7 +107,7 @@ h1, h2 {
     
   /* Styles the project images */
   #projects img {
-    object-fit:contain;
+    object-fit:cover;
     width: 100%; /* Makes the image take up the full width of its parent div */
     height: 100px; /* Lets the image's height adjust automatically based on its width */
     border-radius: 5px; /* Rounds the corners of the image */
