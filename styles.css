@@ -36,6 +36,11 @@ h1, h2 {
     color: #333; /* Darker grey icon color */
 }
 
+#about p, #about h2 {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
 /* Style for the navigation bar */
 #tab-navigation {
     display: flex; /* Use flexbox for layout */

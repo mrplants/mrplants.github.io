@@ -27,7 +27,7 @@ var data = {
     {
       "name": "Bonsai Cultivation - Juniper and Japanese Maple",
       "coverImage": "https://mrplants.github.io/project_2_cover.png", 
-      "coverImageAlt": "/imagine prompt:A Juniper bonsai and a Japanese Maple bonsai stand side by side against a tranquil backdrop, showcasing their distinct shapes and foliage. The Juniper, with its resilient, sun-loving nature, and the Japanese Maple, with its delicate leaves and preference for indirect light, represent the balance between strength and finesity. The image exudes a sense of patience, growth, and harmony, reflecting the essential traits required in a collaborative tech environment. --ar 2:1",
+      "coverImageAlt": "/imagine prompt:A painting with obvious brush strokes of a Juniper bonsai and a Japanese Maple bonsai stand side by side against a tranquil backdrop, showcasing their distinct shapes and foliage. The Juniper, with its resilient, sun-loving nature, and the Japanese Maple, with its delicate leaves and preference for indirect light, represent the balance between strength and finesity. The image exudes a sense of patience, growth, and harmony, reflecting the essential traits required in a collaborative team environment. --ar 2:1",
       "summary": "Cultivation and care of two bonsai trees, a Juniper and a Japanese Maple, fostering an environment of continual growth, learning, and adaptability.",
       "description": "In the pursuit of understanding and appreciating the ancient art of bonsai, I have been nurturing a resilient Juniper and a delicate Japanese Maple. The diverse care requirements and growth patterns of these two species have provided invaluable lessons in patience, adaptability, and problem-solving. I have balanced the different light and water needs, ensured healthy growth conditions, and monitored their progress over time. This experience echoes the intricacies of working in a team environment, where balancing diverse project requirements, adapting to changing circumstances, and finding innovative solutions are paramount. My bonsai cultivation journey symbolizes my dedication, attention to detail, and capability to manage and nurture growth in diverse environments.",
       "skills": "Project Management, Problem Solving, Adaptability, Attention to Detail"
@@ -48,7 +48,7 @@ function fillInData() {
   contactSection.innerHTML += '<a href="mailto:' + data.contact.email + '"><i class="fa fa-envelope contact-icon"></i></a>';
 
   // Add the introduction and resume download button to the 'About' section.
-  aboutSection.innerHTML += '<h2>About Me</h2><p>' + data.introduction + '</p>';
+  aboutSection.innerHTML += '<p>' + data.introduction + '</p>';
   aboutSection.innerHTML += '<p id="resume"><a href="' + data.resumeLink + '" download><button>Download My Resume</button></a></p>';
 
   // Add the project list to the 'Projects' section.
