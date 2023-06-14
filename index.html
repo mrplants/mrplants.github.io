@@ -1,26 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Your Name - Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+  <!-- Title of the website -->
+  <title>Sean Fitzgerald</title>
+  
+  <!-- Importing the font-awesome library for social media icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <!-- Linking the external CSS file -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Header of the website -->
     <header>
-        <h1>Your Name</h1>
+        <!-- Name of the site owner -->
+        <h1>Sean Fitzgerald</h1>
+        <!-- Description of the site owner -->
         <p>Software Developer | AI Researcher</p>
     </header>
 
-    <section id="education"></section>
+    <!-- Contact section to display contact information -->
+    <div id="contact"></div>
 
-    <section id="workExperience"></section>
+    <!-- Navigation bar for switching tabs -->
+    <div id="tab-navigation">
+      <!-- Button to switch to the 'About' tab -->
+      <button onclick="switchTab('about')">About</button>
+      <!-- Button to switch to the 'Projects' tab -->
+      <button onclick="switchTab('projects')">Projects</button>
+    </div>
 
-    <section id="projects"></section>
+    <!-- 'About' section to display information about the site owner -->
+    <div id="about" class="tab-content active"></div>
 
-    <section id="twitterFeed">
-      <h2>Latest Tweets</h2>
-      <!-- Twitter feed will go here -->
-    </section>
+    <!-- 'Projects' section to display information about the site owner's projects -->
+    <div id="projects" class="tab-content"></div>
 
+    <!-- 'Project Details' section to display detailed information about a specific project -->
+    <div id="project-details" class="tab-content"></div>
+
+    <!-- Linking the external JavaScript file -->
     <script src="script.js"></script>
+
 </body>
 </html>

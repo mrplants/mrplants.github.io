@@ -1,20 +1,149 @@
+/* Set global styles for the body element */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; /* Use Arial font */
+    color: #333; /* Dark grey text color */
+    max-width: 900px; /* Maximum width of the content */
+    margin: 0 auto; /* Center the content horizontally */
 }
 
+/* Style for the header section */
 header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
+    text-align: center; /* Center the text */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+/* Style for h1 and h2 elements */
+h1, h2 {
+    color: #444; /* Darker grey text color */
+}
+
+/* Style for the contact section */
+#contact {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the items horizontally */
+}
+
+/* Style for the contact icons */
+.contact-icon {
+    font-size: 20px; /* Icon size */
+    color: #666; /* Grey icon color */
+    margin: 10px; /* Space around icons */
+    transition: color 0.3s ease; /* Transition effect for color changes */
+}
+
+/* Change icon color on hover */
+.contact-icon:hover {
+    color: #333; /* Darker grey icon color */
+}
+
+/* Style for the navigation bar */
+#tab-navigation {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the items horizontally */
+    margin-bottom: 20px; /* Space below the navigation bar */
+}
+
+/* Style for the navigation buttons */
+#tab-navigation button {
+    margin: 0 10px; /* Space around buttons */
+    padding: 10px; /* Space inside buttons */
+    background-color: #ddd; /* Light grey button color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Change button color on hover */
+#tab-navigation button:hover {
+    background-color: #bbb; /* Darker grey button color */
+}
+
+/* Hide tab content by default */
+.tab-content {
+    display: none;
+}
+
+/* Show active tab content */
+.tab-content.active {
+    display: block;
+}
+
+/* Style for the resume download button */
+#resume button {
+    margin: 0 10px; /* Space around button */
+    padding: 10px; /* Space inside button */
+    background-color: #ddd; /* Light grey button color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Change button color on hover */
+#resume button:hover {
+    background-color: #bbb; /* Darker grey button color */
+}
+
+/* Center the content of the resume section */
+#resume {
     text-align: center;
 }
 
-section {
-    margin: 20px 0;
-    padding: 20px;
-    border: 1px solid #ccc;
-}
+/* Adds a margin to the bottom of each project and styles them */
+#projects #container {
+    /*border: 1px solid #ddd; /* Adds a light border around each project */
+    border-radius: 5px; /* Rounds the corners of the border */
+    padding: 20px; /* Adds some space between the border and the content inside it */
+    margin-bottom: 20px; /* Adds some space below each project */
+    overflow: auto; /* Ensures the div expands to include all of its children */
+  }
 
-h2 {
-    color: #333;
-}
+  #projects h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  #projects p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+    
+  /* Styles the project images */
+  #projects img {
+    object-fit:contain;
+    width: 100%; /* Makes the image take up the full width of its parent div */
+    height: 100px; /* Lets the image's height adjust automatically based on its width */
+    border-radius: 5px; /* Rounds the corners of the image */
+    margin-bottom: 10px; /* Adds some space below the image */
+  }
+  
+  /* Styles the Read More/Read Less buttons */
+  #projects button {
+    background-color: #ddd; /* Gives the button a light grey background color */
+    border: none; /* Removes the button's border */
+    padding: 10px 20px; /* Adds some space inside the button */
+    margin-top: 10px; /* Adds some space above the button */
+    cursor: pointer; /* Changes the cursor to a hand when you hover over the button */
+    transition: background-color 0.3s ease-in-out; /* Adds a transition effect to the background color */
+  }
+  
+  /* Changes the button's background color when you hover over it */
+  #projects button:hover {
+    background-color: #bbb;
+  }
+  
+  /* Styles the project description */
+  #description {
+    margin-top: 10px; /* Adds some space above the description */
+    font-style: italic; /* Changes the font style to italic */
+  }
+  
+  /* Animates the showing and hiding of the project descriptions */
+  #projects div div {
+    transition: max-height 0.5s ease-in-out; /* Adds a transition effect to the max-height and opacity */
+    max-height: 0; /* Initially hides the description */
+    overflow: hidden; /* Ensures that the description stays hidden */
+  }
+  
+  #projects div div.show {
+    max-height: 500px; /* Shows the description */
+    opacity: 1; /* Makes the description opaque */
+  }
+  
