@@ -37,7 +37,7 @@ var data = {
       "coverImage": "https://mrplants.github.io/project_3_cover.png",
       "coverImageAlt": "/imagine prompt: --ar 4:1",
       "summary": "Daily summaries of the latest research in the field of artificial intelligence.",
-      "description": "<div id=\"arxiv_dailies\"><!-- Links to summaries will be inserted here --></div>",
+      "description": "<span id=\"arxiv_dailies\"><!-- Links to summaries will be inserted here --></span>",
       // "description": "As an avid reader of the latest research in the field of artificial intelligence, I have created a daily summary of the most interesting papers from the arXiv preprint server. This project has allowed me to hone my skills in data collection, analysis, and presentation, while also keeping me up-to-date on the latest developments in the field. I have also developed a deep understanding of the current state of AI research, which has been invaluable in my own research pursuits. This project demonstrates my ability to independently manage a long-term project, while also highlighting my passion for AI and my commitment to staying informed on the latest developments in the field.",
       "skills": "Data Collection, Data Analysis, Data Visualization, Project Management"
     }
