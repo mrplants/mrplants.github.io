@@ -31,6 +31,15 @@ var data = {
       "summary": "Cultivation and care of two bonsai trees, a Juniper and a Japanese Maple, fostering an environment of continual growth, learning, and adaptability.",
       "description": "In the pursuit of understanding and appreciating the ancient art of bonsai, I have been nurturing a resilient Juniper and a delicate Japanese Maple. The diverse care requirements and growth patterns of these two species have provided invaluable lessons in patience, adaptability, and problem-solving. I have balanced the different light and water needs, ensured healthy growth conditions, and monitored their progress over time. This experience echoes the intricacies of working in a team environment, where balancing diverse project requirements, adapting to changing circumstances, and finding innovative solutions are paramount. My bonsai cultivation journey symbolizes my dedication, attention to detail, and capability to manage and nurture growth in diverse environments.",
       "skills": "Project Management, Problem Solving, Adaptability, Attention to Detail"
+    },
+    {
+      "name": "ArXiv Dailies",
+      "coverImage": "https://mrplants.github.io/project_3_cover.png",
+      "coverImageAlt": "/imagine prompt: --ar 4:1",
+      "summary": "Daily summaries of the latest research in the field of artificial intelligence.",
+      "description": "<div id=\"arxiv_dailies\"><!-- Links to summaries will be inserted here --></div>",
+      // "description": "As an avid reader of the latest research in the field of artificial intelligence, I have created a daily summary of the most interesting papers from the arXiv preprint server. This project has allowed me to hone my skills in data collection, analysis, and presentation, while also keeping me up-to-date on the latest developments in the field. I have also developed a deep understanding of the current state of AI research, which has been invaluable in my own research pursuits. This project demonstrates my ability to independently manage a long-term project, while also highlighting my passion for AI and my commitment to staying informed on the latest developments in the field.",
+      "skills": "Data Collection, Data Analysis, Data Visualization, Project Management"
     }
       ]
 }
@@ -100,6 +109,55 @@ function toggleDescription(index) {
   }
 }
 
+// Function to check if a file exists
+function checkFileExists(url) {
+  return fetch(url, { method: 'HEAD' })
+      .then(response => response.ok)
+      .catch(() => false);
+}
+
+// Function to generate YYYY-MM-DD format date string
+function getDateStr(date) {
+  let year = date.getFullYear();
+  let month = (date.getMonth() + 1).toString().padStart(2, "0");
+  let day = date.getDate().toString().padStart(2, "0");
+
+  return `${year}-${month}-${day}`;
+}
+
+// Function to get 5 most recent existing files
+async function getRecentFiles() {
+  let today = new Date();
+  let foundCount = 0;
+  let files = [];
+
+  while (foundCount < 5) {
+      let dateStr = getDateStr(today);
+      let url = `arxiv_dailies/${dateStr}.html`;
+
+      if (await checkFileExists(url)) {
+          files.push({ url, dateStr });
+          foundCount++;
+      }
+
+      // Decrement the date
+      today.setDate(today.getDate() - 1);
+  }
+
+  return files;
+}
+
+// Function to update the HTML with the found files
+function updateHTML(files) {
+  let html = '';
+
+  for (let file of files) {
+      html += `<a href="${file.url}">${file.dateStr}</a><br/>`;
+  }
+
+  document.getElementById('arxiv_dailies').innerHTML = html;
+}
+
 // Call the fillInData function when the window is loaded.
 // Call the fillInData function when the window is loaded.
 window.onload = function() {
@@ -109,4 +167,7 @@ window.onload = function() {
   if (window.location.hash) {
     switchTab(window.location.hash.slice(1)); // Remove the '#' from the hash before passing it to switchTab.
   }
+
+  // Call the function to get the arxiv files and then update the HTML
+  getRecentFiles().then(updateHTML);
 };
