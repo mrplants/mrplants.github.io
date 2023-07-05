@@ -18,7 +18,7 @@ var data = {
   projects: [
     {
       "name": "Personal Deep Learning Lab",
-      "coverImage": "https://mrplants.github.io/project_1_cover.png", 
+      "coverImage": "https://mrplants.github.io/project_0_cover.png", 
       "coverImageAlt": "/imagine prompt:A visual representation of a neural network is superimposed on a subtly lit background representing an array of computing devices. The image subtly conveys activity and processing power without highlighting the specific setup of the hardware. This design signifies the core functionality of the lab - an active, robust system for deep learning exploration. --ar 4:1",
       "summary": "Constructed and manage an innovative deep learning lab hosting 8 GPUs.",
       "description": "Within the confines of my lab, I have deployed an array of 8 different GPUs, housed in a streamlined and efficient setup. Leveraging the flexibility of this non-traditional infrastructure, I've installed deep learning libraries on each server, essentially creating my own personal sandbox for AI exploration. Beyond just hardware configuration, I also undertake remote server administration, honing my skills in managing and optimizing computing resources. This personal project underscores my capability to create effective solutions, regardless of conventional boundaries, and represents my relentless pursuit of knowledge in the AI domain.",
@@ -26,7 +26,7 @@ var data = {
     },
     {
       "name": "Bonsai Cultivation - Juniper and Japanese Maple",
-      "coverImage": "https://mrplants.github.io/project_2_cover.png", 
+      "coverImage": "https://mrplants.github.io/project_1_cover.png", 
       "coverImageAlt": "/imagine prompt:A painting with obvious brush strokes of a Juniper bonsai and a Japanese Maple bonsai stand side by side against a tranquil backdrop, showcasing their distinct shapes and foliage. The Juniper, with its resilient, sun-loving nature, and the Japanese Maple, with its delicate leaves and preference for indirect light, represent the balance between strength and finesity. The image exudes a sense of patience, growth, and harmony, reflecting the essential traits required in a collaborative team environment. --ar 2:1",
       "summary": "Cultivation and care of two bonsai trees, a Juniper and a Japanese Maple, fostering an environment of continual growth, learning, and adaptability.",
       "description": "In the pursuit of understanding and appreciating the ancient art of bonsai, I have been nurturing a resilient Juniper and a delicate Japanese Maple. The diverse care requirements and growth patterns of these two species have provided invaluable lessons in patience, adaptability, and problem-solving. I have balanced the different light and water needs, ensured healthy growth conditions, and monitored their progress over time. This experience echoes the intricacies of working in a team environment, where balancing diverse project requirements, adapting to changing circumstances, and finding innovative solutions are paramount. My bonsai cultivation journey symbolizes my dedication, attention to detail, and capability to manage and nurture growth in diverse environments.",
@@ -34,7 +34,7 @@ var data = {
     },
     {
       "name": "ArXiv Dailies",
-      "coverImage": "https://mrplants.github.io/project_3_cover.png",
+      "coverImage": "https://mrplants.github.io/project_2_cover.png",
       "coverImageAlt": "/imagine prompt: --ar 4:1",
       "summary": "Daily summaries of the latest research in the field of artificial intelligence.",
       "description": "As an avid reader of the latest research in the field of artificial intelligence, I have created a daily summary of abstracts for the most interesting papers from the arXiv preprint server. This project has allowed me to hone my skills in data collection, analysis, and presentation, while also keeping me up-to-date on the latest developments in the field. I have also developed a deep understanding of the current state of AI research, which has been invaluable in my own research pursuits. This project demonstrates my ability to independently manage a long-term project, while also highlighting my passion for AI and my commitment to staying informed on the latest developments in the field.\nThe five most recent summaries are listed below. (Thank you to arXiv for use of its open access interoperability.)\n<span id=\"arxiv_dailies\"><!-- Links to summaries will be inserted here --></span>",
